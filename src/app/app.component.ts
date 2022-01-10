@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'yurifedorov-cv';
+  isShown: boolean = false ; // hidden by default
+
+  toggleShow() {
+    this.isShown = ! this.isShown;
+  }
 }
