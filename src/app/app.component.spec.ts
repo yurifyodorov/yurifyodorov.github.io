@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'yurifedorov-cv'`, () => {
+  it(`should have as title 'CV'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('yurifedorov-cv');
+    expect(app.title).toEqual('CV');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('yurifedorov-cv app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('CV');
   });
 });
