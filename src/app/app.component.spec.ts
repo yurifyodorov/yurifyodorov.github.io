@@ -19,13 +19,13 @@ describe('AppComponent', () => {
   it(`should have as title 'CV'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('CV');
+    expect(app.title).toEqual('Юрий Федоров');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('CV');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Юрий Федоров');
   });
 });

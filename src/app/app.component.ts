@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'CV';
+  title = 'Юрий Федоров';
   isShown: boolean = false ; // hidden by default
 
   toggleShow() {
