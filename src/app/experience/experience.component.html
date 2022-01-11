@@ -1,6 +1,6 @@
 <div class="flow-root md:px-6">
   <div class="pb-5">
-    <h3 class="text-lg leading-6 font-medium text-gray-900">
+    <h3 class="text-3xl leading-6 font-medium text-gray-900">
       Опыт работы
     </h3>
   </div>
@@ -22,16 +22,30 @@
           <div class="min-w-0 flex-1">
             <div>
               <div class="text-sm">
-                <a href="#" class="font-medium text-gray-900">Специалист по тестированию</a>
+                <a href="#" class="text-lg font-bold text-gray-900">Специалист по тестированию</a>
               </div>
               <p class="mt-0.5 text-sm text-gray-500">
                 Май 2021 - по настоящее время
               </p>
             </div>
             <div class="mt-2 text-sm text-gray-700">
-              <p>
-                ?????
-              </p>
+              <!-- List -->
+              <div class="flow-root mt-6">
+                <ul role="list" class="-my-5 divide-y divide-gray-50">
+                  <li *ngFor="let work of pik" class="py-5">
+                    <div class="relative focus-within:ring-2 focus-within:ring-indigo-500">
+                      <h3 class="text-sm font-semibold text-gray-800">
+                        <a href="#" class="hover:underline focus:outline-none">
+                          <!-- Extend touch target to entire panel -->
+                          <span class="absolute inset-0" aria-hidden="true"></span>
+                          {{ work.workName }}
+                        </a>
+                      </h3>
+                      <p class="mt-1 text-sm text-gray-600 line-clamp-2">{{ work.description }}</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -50,16 +64,30 @@
           <div class="min-w-0 flex-1">
             <div>
               <div class="text-sm">
-                <span class="font-medium text-gray-900">Инженер-программист</span>
+                <span class="text-lg font-bold text-gray-900">Инженер-программист</span>
               </div>
               <p class="mt-0.5 text-sm text-gray-500">
                 Апрель 2020 — Май 2021
               </p>
             </div>
             <div class="mt-2 text-sm text-gray-700">
-              <p>
-                ????
-              </p>
+                <!-- List -->
+                <div class="flow-root mt-6">
+                  <ul role="list" class="-my-5 divide-y divide-gray-50">
+                    <li *ngFor="let work of nik" class="py-5">
+                      <div class="relative focus-within:ring-2 focus-within:ring-indigo-500">
+                        <h3 class="text-sm font-semibold text-gray-800">
+                          <a href="#" class="hover:underline focus:outline-none">
+                            <!-- Extend touch target to entire panel -->
+                            <span class="absolute inset-0" aria-hidden="true"></span>
+                            {{ work.workName }}
+                          </a>
+                        </h3>
+                        <p class="mt-1 text-sm text-gray-600 line-clamp-2">{{ work.description }}</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
             </div>
           </div>
         </div>

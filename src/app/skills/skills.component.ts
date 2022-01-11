@@ -1,53 +1,61 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss']
 })
-export class SkillsComponent implements OnInit {
+export class SkillsComponent {
 
   skills: any[] = [
     {
       "title": "Web Technologies",
       "level": 70,
-      "items": ['HTML5', 'CSS3', 'TypeScript']
+      "items": ['HTML5', 'CSS3', 'TypeScript'],
+      "pro": false
     },
     {
       "title": "IDE & Tools",
       "level": 90,
-      "items": ['Webstorm', 'VS Code', 'Postman', 'pgAdmin']
+      "items": ['Webstorm', 'VS Code', 'Postman', 'pgAdmin'],
+      "pro": false
     },
     {
       "title": "Testing",
-      "level": 90,
-      "items": ['Cypress', 'CodeceptJS']
+      "level": 100,
+      "items": ['Cypress', 'CodeceptJS'],
+      "pro": true
+    },
+    {
+      "title": "Design",
+      "level": 100,
+      "items": ['Figma'],
+      "pro": true
     },
     {
       "title": "Database",
       "level": 40,
-      "items": ['PostgreSQL']
+      "items": ['PostgreSQL'],
+      "pro": false
     },
     {
       "title": "Frameworks",
-      "level": 50,
-      "items": ['Angular']
+      "level": 30,
+      "items": ['Angular'],
+      "pro": false
     },
     {
       "title": "Methodologies",
-      "level": 50,
-      "items": ['Agile', 'Scrum', 'BDD']
+      "level": 70,
+      "items": ['Agile', 'Scrum', 'BDD'],
+      "pro": false
     },
     {
       "title": "Other",
-      "level": 50,
-      "items": ['JIRA', 'Confluence', 'Redmine', 'YouTrack', 'TestRail']
+      "level": 100,
+      "items": ['JIRA', 'Confluence', 'Redmine', 'YouTrack', 'TestRail', 'GitLab'],
+      "pro": true
     },
   ];
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
