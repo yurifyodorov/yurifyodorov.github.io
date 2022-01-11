@@ -53,7 +53,7 @@ export class SkillsComponent {
     {
       "title": "Other",
       "level": 100,
-      "items": ['JIRA', 'Confluence', 'Redmine', 'YouTrack', 'TestRail', 'GitLab'],
+      "items": ['JIRA', 'Confluence', 'Redmine', 'YouTrack', 'TestRail', 'GitLab', 'Bitbucket'],
       "pro": true
     },
   ];
