@@ -2,16 +2,20 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { CoursesComponent } from './courses/courses.component';
 import { SkillsComponent } from './skills/skills.component';
+import { AboutComponent } from './about/about.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WorkExperienceComponent,
     CoursesComponent,
-    SkillsComponent
+    SkillsComponent,
+    AboutComponent,
+    ContactsComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule

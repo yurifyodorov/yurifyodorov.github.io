@@ -1,200 +1,44 @@
-<div>
-  <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
-  <div *ngIf="isShown" class="fixed inset-0 flex z-40 md:hidden" role="dialog" aria-modal="true">
+<div class="fixed top-0 left-0 w-1/2 h-full bg-white" aria-hidden="true"></div>
+<div class="fixed top-0 right-0 w-1/2 h-full" aria-hidden="true"></div>
 
-    <div class="fixed inset-0 bg-gray-600 bg-opacity-75" aria-hidden="true"></div>
-    <div class="relative flex-1 flex flex-col max-w-xs w-full bg-gray-200">
-      <div class="absolute top-0 right-0 -mr-12 pt-2">
-        <button (click)="toggleShow()" type="button" class="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-          <span class="sr-only">Close sidebar</span>
-          <!-- Heroicon name: outline/x -->
-          <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-      <div class="mt-5 px-4 space-y-1">
-        <div class="px-4 py-5 border-b sm:px-6">
-          <h3 class="text-lg leading-6 font-medium text-gray-900">
-            Мои контакты
-          </h3>
-        </div>
-        <ul role="list" class="divide-y divide-gray-200">
-          <li class="py-4 flex">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 class="h-10 w-10 rounded-full"
-                 viewBox="0 0 20 20"
-                 fill="gray"
-            >
-              <path
-                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-            </svg>
-            <div class="ml-3">
-              <p class="text-sm font-medium text-gray-900">Mobile</p>
-              <a class="text-sm" href="tel:8-921-753-0295">+7 (921) 753-02-95</a>
-            </div>
-          </li>
+<div class="relative min-h-screen flex flex-col">
 
-          <li class="py-4 flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-10 w-10"
-              viewBox="0 0 20 20"
-              fill="gray"
-            >
-              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-            </svg>
-            <div class="ml-3">
-              <p class="text-sm font-medium text-gray-900">Gmail</p>
-              <p class="text-sm">yuri.inpost@gmail.com</p>
-            </div>
-          </li>
-
-          <li class="py-4 flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-10 w-10"
-              viewBox="0 0 20 20"
-              fill="gray">
-              <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
-            </svg>
-            <div class="ml-3">
-              <p class="text-sm font-medium text-gray-900">Telegram</p>
-              <p class="text-sm">@yuryfyodorov</p>
-            </div>
-          </li>
-        </ul>
-
-        <h1>SIDEBAR-MOB</h1>
-
-      </div>
-
-    </div>
-
-    <div class="flex-shrink-0 w-14" aria-hidden="true">
-      <!-- Force sidebar to shrink to fit close icon -->
-    </div>
-  </div>
-
-  <!-- Static sidebar for desktop -->
-  <div class="hidden md:flex md:w-96 md:flex-col md:fixed md:inset-y-0">
-    <!-- Sidebar component, swap this element with another sidebar if you like -->
-    <div class="flex-1 flex flex-col min-h-0 bg-gray-200">
-      <div class="flex-shrink-0 flex p-8">
-        <a href="#" class="flex-shrink-0 w-full group block">
-          <div class="pl-4">
-            <img class="inline-block h-72 w-72 rounded-md" src="https://media-exp1.licdn.com/dms/image/C4E03AQHXXrHbSZnCQw/profile-displayphoto-shrink_800_800/0/1606066680212?e=1647475200&v=beta&t=SlZwID8_8VINVSQZ04tPiWdZsJq6_dPtkgkiCcbHayc" alt="">
+  <!-- 3 column wrapper -->
+  <div class="flex-grow w-full max-w-7xl mx-auto xl:px-8 lg:flex">
+    <!-- Left sidebar & main wrapper -->
+    <div class="flex-1 min-w-0 bg-white xl:flex">
+      <div class="border-b border-gray-200 xl:border-b-0 xl:flex-shrink-0 xl:w-64 xl:border-r xl:border-gray-200 bg-white">
+        <div class="h-full px-6 sm:pl-6 xl:pl-0">
+          <!-- Start left column area -->
+          <div class="h-full py-6 relative">
+            <app-about></app-about>
+            <app-contacts></app-contacts>
           </div>
-        </a>
-      </div>
-      <div class="flex-1 flex flex-col pt-5 px-10 pb-4 overflow-y-auto">
-        <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
-          <h3 class="text-lg leading-6 font-medium text-gray-900">
-            Мои контакты
-          </h3>
+          <!-- End left column area -->
         </div>
-        <ul role="list" class="divide-y divide-gray-200">
-          <li class="py-4 flex">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 class="h-10 w-10 rounded-full"
-                 viewBox="0 0 20 20"
-                 fill="gray"
-            >
-              <path
-                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-            </svg>
-            <div class="ml-3">
-              <p class="text-sm font-medium text-gray-900">Mobile</p>
-              <a class="text-sm" href="tel:8-921-753-0295">+7 (921) 753-02-95</a>
-            </div>
-          </li>
+      </div>
 
-          <li class="py-4 flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-10 w-10"
-              viewBox="0 0 20 20"
-              fill="gray"
-            >
-              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-            </svg>
-            <div class="ml-3">
-              <p class="text-sm font-medium text-gray-900">Gmail</p>
-              <a class="text-sm" href="mailto:yuri.inpost@gmail.com">yuri.inpost@gmail.com</a>
-            </div>
-          </li>
-
-          <li class="py-4 flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-10 w-10"
-              viewBox="0 0 20 20"
-              fill="gray">
-              <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
-            </svg>
-            <div class="ml-3">
-              <p class="text-sm font-medium text-gray-900">Telegram</p>
-              <p class="text-sm">@yuryfyodorov</p>
-            </div>
-          </li>
-        </ul>
-        <div class="mt-5 flex-1 px-2 space-y-1 text-white">
-          SIDEBAR-BIG
+      <div class="bg-white lg:min-w-0 lg:flex-1">
+        <div class="h-full py-6 px-6 sm:px-6">
+          <!-- Start main area-->
+          <div class="relative h-full">
+            <app-experience></app-experience>
+            <app-courses></app-courses>
+          </div>
+          <!-- End main area -->
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="md:pl-96 flex flex-col flex-1">
-    <div class="sticky top-0 z-10 md:hidden pl-3 pt-1 sm:pl-3 sm:pt-3 bg-gray-100">
-      <button (click)="toggleShow()" type="button" class="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-        <span class="sr-only">Open sidebar</span>
-        <!-- Heroicon name: outline/menu -->
-        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
-    <main class="content flex-1" role="main">
-      <div class="py-6">
-        <div class="max-w-7xl mx-auto px-6 sm:px-6 md:px-8">
-          <div class="flex items-center">
-            <div>
-              <img
-                class="inline-block h-20 w-20 rounded-md md:hidden"
-                src="https://media-exp1.licdn.com/dms/image/C4E03AQHXXrHbSZnCQw/profile-displayphoto-shrink_800_800/0/1606066680212?e=1647475200&v=beta&t=SlZwID8_8VINVSQZ04tPiWdZsJq6_dPtkgkiCcbHayc"
-                alt="">
-            </div>
-            <div class="ml-3">
-              <h1 class="text-3xl font-semibold text-gray-900">
-                {{ title }}
-              </h1>
-              <p class="text-base font-medium text-gray-500 group-hover:text-white">
-                Frontend-разработчик
-              </p>
-            </div>
-          </div>
+    <div class="bg-white pr-4 sm:pr-6 lg:pr-8 lg:flex-shrink-0 lg:border-l lg:border-gray-200 xl:pr-0">
+      <div class="h-full py-6 pl-6 lg:w-80">
+        <!-- Start right column area -->
+        <div class="relative h-full">
+          <app-skills></app-skills>
         </div>
-        <div class="relative mt-8">
-          <div class="absolute inset-0 flex items-center" aria-hidden="true">
-            <div class="w-full border-t border-gray-300"></div>
-          </div>
-        </div>
-        <div class="max-w-7xl mx-auto px-6 py-10 sm:px-6 md:px-8">
-          <!-- Replace with your content -->
-          <div class="py-4 pr-6">
-            <div class="h-96">
-              <app-work-experience></app-work-experience>
-              <app-courses></app-courses>
-              <app-skills></app-skills>
-            </div>
-          </div>
-          <!-- /End replace -->
-        </div>
+        <!-- End right column area -->
       </div>
-    </main>
+    </div>
   </div>
 </div>
 
