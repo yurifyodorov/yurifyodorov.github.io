@@ -41,6 +41,17 @@
                       </h3>
                       <p class="mt-1 text-sm text-gray-600 line-clamp-2">{{ work.description }}</p>
                     </div>
+                    <ul class="space-y-1 mt-4">
+                      <li
+                        *ngFor="let item of work.items"
+                        class="relative flex items-start"
+                      >
+                        <div class="flex text-sm items-center text-gray-400">
+                          <i class="fas fa-caret-right"></i>
+                          <p class="text-gray-400 ml-2">{{ item }}</p>
+                        </div>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
@@ -81,6 +92,17 @@
                         </h3>
                         <p class="mt-1 text-sm text-gray-600 line-clamp-2">{{ work.description }}</p>
                       </div>
+                      <ul class="space-y-1 mt-4">
+                        <li
+                          *ngFor="let item of work.items"
+                          class="relative flex items-start"
+                        >
+                          <div class="flex text-sm items-center text-gray-400">
+                            <i class="fas fa-caret-right"></i>
+                            <p class="text-gray-400 ml-2">{{ item }}</p>
+                          </div>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </div>
