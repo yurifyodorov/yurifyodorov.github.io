@@ -9,6 +9,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SummaryComponent } from './about/summary/summary.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SummaryComponent } from './about/summary/summary.component';
     ContactsComponent,
     ExperienceComponent,
     PortfolioComponent,
-    SummaryComponent
+    SummaryComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule

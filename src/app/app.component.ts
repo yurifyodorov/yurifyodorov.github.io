@@ -7,9 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Юрий Федоров';
-  isShown: boolean = false ; // hidden by default
+  isShownContent: boolean = true;
+
 
   toggleShow() {
-    this.isShown = ! this.isShown;
+    this.isShownContent = ! this.isShownContent;
   }
 }
