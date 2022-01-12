@@ -4,43 +4,21 @@
       <h3 class="text-2xl leading-6 font-medium text-gray-900">Контакты</h3>
       <div class="mt-6 max-w-xl text-sm text-gray-500">
         <ul role="list">
-          <li class="py-2 flex">
+          <li
+            *ngFor="let contact of contacts"
+            class="py-2 flex"
+          >
             <div class="w-6 text-center">
-              <i class="fas fa-lg fa-mobile-alt"></i>
+              <i
+                class="fa-lg"
+                [ngClass]="contact.icon"
+              ></i>
             </div>
 
             <div class="ml-3">
-              <a class="text-sm" href="tel:8-921-753-0295">+7 (921) 753-02-95</a>
+              <a class="text-sm" [href]=[contact.link] target="_blank">{{ contact.value }}</a>
             </div>
           </li>
-
-          <li class="py-2 flex">
-            <div class="w-6 text-center">
-              <i class="fas fa-lg fa-envelope"></i>
-            </div>
-            <div class="ml-3">
-              <a class="text-sm" href="mailto:yuri.inpost@gmail.com">yuri.inpost@gmail.com</a>
-            </div>
-          </li>
-
-          <li class="py-2 flex">
-            <div class="w-6 text-center">
-              <i class="fab fa-lg fa-telegram"></i>
-            </div>
-            <div class="ml-3">
-              <a class="text-sm" href="mailto:yuri.inpost@gmail.com">@yuryfyodorov</a>
-            </div>
-          </li>
-
-          <li class="py-2 flex">
-            <div class="w-6 text-center">
-              <i class="fab fa-lg fa-linkedin"></i>
-            </div>
-            <div class="ml-3">
-              <a class="text-sm" href="https://www.linkedin.com/in/yurifedorov/" target="_blank">Linkedin</a>
-            </div>
-          </li>
-
         </ul>
       </div>
     </div>
