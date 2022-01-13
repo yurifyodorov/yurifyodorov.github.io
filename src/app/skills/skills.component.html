@@ -28,9 +28,43 @@
 
         </li>
       </ul>
+    </div>
+  </div>
+  <div class="py-10">
+    <h3 class="text-3xl leading-6 font-medium text-gray-900">
+      English
+    </h3>
+    <div class="mt-2 ml-4 xl:ml-0 max-w-xl text-sm text-gray-500">
+      <p class="text-lg mb-3 font-semibold text-gray-500">
+        B2 Intermediate
+      </p>
+    </div>
+    <div class="mt-12 max-w-xl text-sm text-gray-500">
+      <ul>
+        <li
+          *ngFor="let lavel of english"
+          class="mb-6"
+        >
 
+          <div class="flex justify-between mb-1">
+            <span class="text-base font-medium text-gray-900">{{ lavel.title }}</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5">
+            <div
+              class="bg-blue-600 h-2.5 rounded-full"
+              [ngClass]="lavel.pro  ? 'bg-green-600' : 'bg-blue-600'"
+              [style.width.%]="lavel.level"
+            ></div>
+          </div>
+          <div>{{ lavel.note }}</div>
+          <div class="badges mt-4">
+            <span
+              *ngFor="let item of lavel.items"
+              class="inline-flex items-center mb-1 mr-1 px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">{{ item }}</span>
+          </div>
 
-
+        </li>
+      </ul>
     </div>
   </div>
 </div>

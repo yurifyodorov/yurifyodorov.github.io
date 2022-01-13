@@ -58,4 +58,25 @@ export class SkillsComponent {
     },
   ];
 
+  english: any[] = [
+    {
+      "title": "Reading",
+      "note": "хорошо",
+      "level": 80,
+      "pro": true
+    },
+    {
+      "title": "Writing",
+      "note": "хорошо",
+      "level": 80,
+      "pro": true
+    },
+    {
+      "title": "Speaking",
+      "note": "мало практики",
+      "level": 20,
+      "pro": false
+    },
+  ];
+
 }
