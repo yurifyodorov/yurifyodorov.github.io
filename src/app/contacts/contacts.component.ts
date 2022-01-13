@@ -28,9 +28,14 @@ export class ContactsComponent {
       "link": 'https://www.linkedin.com/in/yurifedorov/'
     },
     {
-      "icon": "fab fab fa-github",
+      "icon": "fab fa-github",
       "value": "GitHub",
       "link": 'https://github.com/yurifyodorov'
+    },
+    {
+      "icon": "fab fa-bitbucket",
+      "value": "Bitbucket",
+      "link": 'https://bitbucket.org/yurifedorov-training/'
     }
   ];
 }
