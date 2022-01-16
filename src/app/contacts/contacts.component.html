@@ -12,7 +12,13 @@
               <i
                 class="fa-lg"
                 [ngClass]="contact.icon"
+                *ngIf="contact.icon != 'hh'"
               ></i>
+              <img
+                class="w-5 ml-0.5"
+                *ngIf="contact.icon === 'hh'"
+                src="assets/images/min-hh-red.png"
+                alt="hh.ru">
             </div>
 
             <div class="ml-3">

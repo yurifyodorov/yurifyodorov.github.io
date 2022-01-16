@@ -36,6 +36,11 @@ export class ContactsComponent {
       "icon": "fab fa-bitbucket",
       "value": "Bitbucket",
       "link": 'https://bitbucket.org/yurifedorov-training/'
+    },
+    {
+      "icon": "hh",
+      "value": "HeadHunter",
+      "link": 'https://spb.hh.ru/resume/2c75080fff07c5ca870039ed1f74594f416534'
     }
   ];
 }
