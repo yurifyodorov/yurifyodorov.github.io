@@ -10,6 +10,58 @@
         <span class="absolute top-5 left-10 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
         <div class="relative flex items-start space-x-6">
           <div class="relative">
+            <img
+              class="h-20 w-20 rounded-full flex items-center justify-center bg-white"
+              src="assets/images/logo-brokeree.svg"
+              alt="">
+          </div>
+          <div class="min-w-0 flex-1">
+            <div>
+              <div class="text-sm">
+                <a href="#" class="text-lg font-bold text-gray-900">QA Engineer</a>
+              </div>
+              <p class="mt-0.5 text-sm text-gray-500">
+                February 2022 - until today
+              </p>
+            </div>
+            <div class="mt-2 text-sm text-gray-700">
+              <!-- List -->
+              <div class="flow-root mt-6">
+                <ul role="list" class="-my-5 divide-y divide-gray-50">
+                  <li *ngFor="let work of brokeree" class="py-5">
+                    <div class="relative focus-within:ring-2 focus-within:ring-indigo-500">
+                      <h3 class="text-sm font-semibold text-gray-800">
+                        <!-- Extend touch target to entire panel -->
+                        <span class="absolute inset-0" aria-hidden="true"></span>
+                        {{ work.workName }}
+                      </h3>
+                      <p class="mt-1 text-sm text-gray-600 line-clamp-2">{{ work.description }}</p>
+                    </div>
+                    <ul class="space-y-1 mt-4">
+                      <li
+                        *ngFor="let item of work.items"
+                        class="relative flex items-start"
+                      >
+                        <div class="flex text-sm items-center text-gray-400">
+                          <i class="fas fa-caret-right"></i>
+                          <p class="text-gray-400 ml-2">{{ item }}</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <div class="relative pb-14">
+        <span class="absolute top-5 left-10 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
+        <div class="relative flex items-start space-x-6">
+          <div class="relative">
             <div class="h-20 w-20 rounded-full flex items-center justify-center bg-white">
               <svg viewBox="0 0 54 54">
                 <path
@@ -22,10 +74,10 @@
           <div class="min-w-0 flex-1">
             <div>
               <div class="text-sm">
-                <a href="#" class="text-lg font-bold text-gray-900">Специалист по тестированию</a>
+                <a href="#" class="text-lg font-bold text-gray-900">Junior QA Engineer</a>
               </div>
               <p class="mt-0.5 text-sm text-gray-500">
-                Май 2021 - по настоящее время
+                May 2021 - February 2022
               </p>
             </div>
             <div class="mt-2 text-sm text-gray-700">
@@ -73,10 +125,10 @@
           <div class="min-w-0 flex-1">
             <div>
               <div class="text-sm">
-                <span class="text-lg font-bold text-gray-900">Инженер-программист</span>
+                <span class="text-lg font-bold text-gray-900">Junior Software Engineer</span>
               </div>
               <p class="mt-0.5 text-sm text-gray-500">
-                Апрель 2020 — Май 2021
+                April 2020 — May 2021
               </p>
             </div>
             <div class="mt-2 text-sm text-gray-700">
