@@ -8,19 +8,19 @@ import { Component } from '@angular/core';
 export class ExperienceComponent {
   brokeree: any[] = [
     {
-      "workName": "task 1",
-      "description": 'описание',
-      "items": ['item-1', 'item-2']
+      "workName": "Create test documentation",
+      "description": 'Writing test cases in KiwiTCMS',
+      "items": ['wrote test cases using Gherkin', 'make test plans']
     },
     {
-      "workName": "task 2",
-      "description": 'описание',
-      "items": ['item-1']
+      "workName": "Manual testing",
+      "description": 'Performed testing of new functionality',
+      "items": ['acceptance testing', 'exploratory testing']
     },
     {
-      "workName": "task 3",
-      "description": 'описание',
-      "items": ['item-1']
+      "workName": "Autotests",
+      "description": 'Coverage of the product by autotests',
+      "items": ['developing tests with a Playwright']
     }
   ];
 

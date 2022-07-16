@@ -23,7 +23,7 @@ export class SkillsComponent {
     {
       "title": "Testing",
       "level": 100,
-      "items": ['Cypress', 'CodeceptJS'],
+      "items": ['Cypress', 'CodeceptJS', 'Playwright'],
       "pro": true
     },
     {
