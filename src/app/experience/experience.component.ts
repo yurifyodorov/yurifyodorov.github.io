@@ -10,7 +10,7 @@ export class ExperienceComponent {
     {
       "workName": "Create test documentation",
       "description": 'Writing test cases in KiwiTCMS',
-      "items": ['wrote test cases using Gherkin', 'make test plans']
+      "items": ['describing functional requirements', 'describing test cases using Gherkin', 'preparing plans',]
     },
     {
       "workName": "Manual testing",
