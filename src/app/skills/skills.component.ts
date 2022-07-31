@@ -17,11 +17,11 @@ export class SkillsComponent {
     {
       "title": "IDE & Tools",
       "level": 90,
-      "items": ['Webstorm', 'VS Code', 'Postman', 'pgAdmin'],
+      "items": ['WebStorm', 'VS Code', 'Postman', 'pgAdmin'],
       "pro": false
     },
     {
-      "title": "Testing",
+      "title": "Test Automation Tools",
       "level": 100,
       "items": ['Cypress', 'CodeceptJS', 'Playwright'],
       "pro": true
@@ -47,13 +47,13 @@ export class SkillsComponent {
     {
       "title": "Methodologies",
       "level": 70,
-      "items": ['Agile', 'Scrum', 'BDD'],
+      "items": ['BDD', 'Scrum'],
       "pro": false
     },
     {
       "title": "Other",
       "level": 100,
-      "items": ['JIRA', 'Confluence', 'Redmine', 'YouTrack', 'TestRail', 'GitLab', 'Bitbucket'],
+      "items": ['JIRA', 'Confluence', 'Redmine', 'YouTrack', 'TestRail', 'Kiwi TCMS', 'GitLab', 'Bitbucket'],
       "pro": true
     },
   ];
