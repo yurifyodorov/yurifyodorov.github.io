@@ -6,6 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent {
+  avalon: any[] = [
+    {
+      "workName": "Test documentation",
+      "description": 'Working with TestRail',
+      "items": ['creating test plans', 'described test cases in TestRail']
+    },
+    {
+      "workName": "Manual testing",
+      "description": 'Performed testing of new functionality',
+      "items": ['acceptance testing']
+    },
+    {
+      "workName": "Autotests",
+      "description": 'Coverage of the product by autotests',
+      "items": ['developing tests with a Cypress']
+    }
+  ];
+
+
   brokeree: any[] = [
     {
       "workName": "Create test documentation",

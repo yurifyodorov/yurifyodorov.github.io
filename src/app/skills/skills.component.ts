@@ -17,13 +17,13 @@ export class SkillsComponent {
     {
       "title": "IDE & Tools",
       "level": 90,
-      "items": ['WebStorm', 'VS Code', 'Postman', 'pgAdmin'],
+      "items": ['WebStorm', 'Postman', 'DBeaver'],
       "pro": false
     },
     {
       "title": "Test Automation Tools",
       "level": 100,
-      "items": ['Cypress', 'CodeceptJS', 'Playwright'],
+      "items": ['Cypress', 'Playwright'],
       "pro": true
     },
     {
@@ -34,14 +34,14 @@ export class SkillsComponent {
     },
     {
       "title": "Database",
-      "level": 40,
+      "level": 70,
       "items": ['PostgreSQL'],
       "pro": false
     },
     {
       "title": "Frameworks",
-      "level": 30,
-      "items": ['Angular'],
+      "level": 20,
+      "items": ['Angular', 'React'],
       "pro": false
     },
     {
@@ -74,7 +74,7 @@ export class SkillsComponent {
     {
       "title": "Speaking",
       "note": "little practice",
-      "level": 20,
+      "level": 40,
       "pro": false
     },
   ];

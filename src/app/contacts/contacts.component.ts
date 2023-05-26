@@ -15,7 +15,7 @@ export class ContactsComponent {
     {
       "icon": "fab fa-telegram",
       "value": "@yuryfyodorov",
-      "link": '#'
+      "link": 'https://t.me/yuryfyodorov'
     },
     {
       "icon": "fab fa-linkedin",
