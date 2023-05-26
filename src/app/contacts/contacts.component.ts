@@ -8,11 +8,6 @@ import { Component } from '@angular/core';
 export class ContactsComponent {
   contacts: any[] = [
     {
-      "icon": "fas fa-mobile-alt",
-      "value": "+7 (921) 753-02-95",
-      "link": 'tel:+7-921-753-0295'
-    },
-    {
       "icon": "fas fa-envelope",
       "value": "yuri.inpost@gmail.com",
       "link": 'mailto:yuri.inpost@gmail.com'
