@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "yurifedorov-cv:build:production"
+              "buildTarget": "yurifedorov-cv:build:production"
             },
             "development": {
-              "browserTarget": "yurifedorov-cv:build:development"
+              "buildTarget": "yurifedorov-cv:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "yurifedorov-cv:build"
+            "buildTarget": "yurifedorov-cv:build"
           }
         },
         "test": {
