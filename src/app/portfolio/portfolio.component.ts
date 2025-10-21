@@ -12,7 +12,7 @@ export class PortfolioComponent {
       "link": 'https://tcms.yurifedorov.com/',
       "note": 'Full stack application built with Next.js/React using FSD architecture',
       "date": '2024 — present',
-      "icon": '🔥'  // эмодзи вместо SVG
+      "icon": '🔥'
     },
     {
       "name": "Angular Blog",
