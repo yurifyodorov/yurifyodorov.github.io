@@ -9,74 +9,72 @@ export class SkillsComponent {
 
   skills: any[] = [
     {
-      "title": "Web Technologies",
-      "level": 70,
-      "items": ['HTML5', 'CSS3', 'TypeScript'],
-      "pro": false
-    },
-    {
-      "title": "IDE & Tools",
-      "level": 90,
-      "items": ['WebStorm', 'Postman', 'DBeaver'],
-      "pro": false
-    },
-    {
-      "title": "Test Automation Tools",
+      "title": "Test Automation & QA",
       "level": 100,
-      "items": ['Cypress', 'Playwright'],
+      "items": ['Cypress', 'Playwright', 'BDD', 'TestRail', 'Kiwi TCMS'],
       "pro": true
     },
     {
-      "title": "Design",
-      "level": 100,
-      "items": ['Figma'],
+      "title": "Front-end Frameworks",
+      "level": 80,
+      "items": ['Angular', 'React', 'Next.js', 'TypeScript'],
       "pro": true
     },
     {
-      "title": "Database",
+      "title": "Back-end / Full-stack",
       "level": 70,
-      "items": ['PostgreSQL'],
-      "pro": false
-    },
-    {
-      "title": "Frameworks",
-      "level": 20,
-      "items": ['Angular', 'React'],
-      "pro": false
-    },
-    {
-      "title": "Methodologies",
-      "level": 70,
-      "items": ['BDD', 'Scrum'],
-      "pro": false
-    },
-    {
-      "title": "Other",
-      "level": 100,
-      "items": ['JIRA', 'Confluence', 'Redmine', 'YouTrack', 'TestRail', 'Kiwi TCMS', 'GitLab', 'Bitbucket'],
+      "items": ['Node.js', 'PostgreSQL', 'REST API', 'tRPC', 'S3'],
       "pro": true
     },
+    {
+      "title": "DevOps & Tools",
+      "level": 80,
+      "items": ['GitLab CI/CD', 'GitHub Actions', 'Docker', 'Postman', 'Grafana', 'Prometheus'],
+      "pro": true
+    },
+    {
+      "title": "Design & Prototyping",
+      "level": 70,
+      "items": ['Figma', 'UI/UX Principles'],
+      "pro": false
+    },
+    {
+      "title": "AI / Generative Models",
+      "level": 60,
+      "items": ['ChatGPT', 'Prompt Engineering'],
+      "pro": true
+    }
   ];
 
   english: any[] = [
     {
       "title": "Reading",
-      "note": "good",
-      "level": 80,
+      "note": "fluent technical reading",
+      "level": 90,
       "pro": true
     },
     {
       "title": "Writing",
-      "note": "good",
-      "level": 80,
+      "note": "technical documentation, reports",
+      "level": 85,
       "pro": true
     },
     {
       "title": "Speaking",
-      "note": "little practice",
+      "note": "presentations, discussions",
       "level": 40,
-      "pro": false
-    },
+      "pro": true
+    }
   ];
+
+  getLevelColor(level: number): string {
+    if (level < 50) {
+      return '#f59e0b';
+    } else if (level < 100) {
+      return '#3b82f6';
+    } else {
+      return '#16a34a';
+    }
+  }
 
 }

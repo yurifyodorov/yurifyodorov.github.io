@@ -15,9 +15,11 @@
           </div>
           <div class="w-full bg-gray-200 rounded-full h-2.5">
             <div
-              class="bg-blue-600 h-2.5 rounded-full"
-              [ngClass]="skill.pro  ? 'bg-green-600' : 'bg-blue-600'"
-              [style.width.%]="skill.level"
+              class="h-2.5 rounded-full"
+              [ngStyle]="{
+                'width.%': skill.level,
+                'background-color': getLevelColor(skill.level)
+              }"
             ></div>
           </div>
           <div class="badges mt-4">
@@ -51,9 +53,11 @@
           </div>
           <div class="w-full bg-gray-200 rounded-full h-2.5">
             <div
-              class="bg-blue-600 h-2.5 rounded-full"
-              [ngClass]="lavel.pro  ? 'bg-green-600' : 'bg-blue-600'"
-              [style.width.%]="lavel.level"
+              class="h-2.5 rounded-full"
+              [ngStyle]="{
+                'width.%': lavel.level,
+                'background-color': getLevelColor(lavel.level)
+              }"
             ></div>
           </div>
           <div>{{ lavel.note }}</div>
